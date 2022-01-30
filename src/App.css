@@ -40,3 +40,12 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+.top20 {
+  margin-top: 20px;
+}
+
+.right {
+  float: right;
+  margin-right: 1rem;
+}

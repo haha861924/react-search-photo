@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
+
 const SearchBar = (props) => {
+  const { handleSubmit } = props
   const [state, setState] = useState({ inputText: '' })
 
   const handleInput = ({ target }) => {
     setState({ inputText: target.value })
+  }
+  const handleFormSubmit = (e) => {
+    e.preventDefault()
+    handleSubmit(state.inputText)
   }
   return (
     <div className="ui segment">
