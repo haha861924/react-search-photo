@@ -1,4 +1,10 @@
+import React, { useState } from 'react'
 const SearchBar = (props) => {
+  const [state, setState] = useState({ inputText: '' })
+
+  const handleInput = ({ target }) => {
+    setState({ inputText: target.value })
+  }
   return (
     <div className="ui segment">
       <form className="ui form" onSubmit={handleFormSubmit}>
