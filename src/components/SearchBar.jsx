@@ -1,16 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-const SearchBar = (props) => {
-  const { handleSubmit } = props
-  const [state, setState] = useState({ inputText: '' })
+const SearchBar = ({ handleSubmit }) => {
+  const [state, setState] = useState({ inputText: '' });
 
   const handleInput = ({ target }) => {
-    setState({ inputText: target.value })
-  }
+    setState({ inputText: target.value });
+  };
   const handleFormSubmit = (e) => {
-    e.preventDefault()
-    handleSubmit(state.inputText)
-  }
+    e.preventDefault();
+    handleSubmit(state.inputText);
+  };
   return (
     <div className="ui segment">
       <form className="ui form" onSubmit={handleFormSubmit}>
@@ -18,10 +17,10 @@ const SearchBar = (props) => {
           <label htmlFor="search">Search</label>
           <input id="search" type="text" onChange={handleInput} value={state.inputText} />
         </div>
-        <button className="ui button"> submit </button>
+        <button className="ui button floated right"> submit </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;
