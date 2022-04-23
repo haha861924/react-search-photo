@@ -4,7 +4,7 @@
   "homepage": "https://haha861924.github.io/react-search-photo",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/react-search-photo/",
+    "build": "vite build --base=./",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b main -d build"
