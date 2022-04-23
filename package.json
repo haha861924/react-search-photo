@@ -4,10 +4,10 @@
   "homepage": "https://haha861924.github.io/react-search-photo",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/react-search-photo/",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "dependencies": {
     "axios": "^0.25.0",
